@@ -274,11 +274,21 @@ function ContactSection() {
                     <div className="space-y-6 text-lg text-[#6d655d]">
                         <div className="flex items-center gap-4">
                             <Phone className="h-5 w-5 text-[#b28a58]" />
-                            <span dir="ltr">{t("contact.phone")}</span>
+                            <span dir="ltr">+420732446983</span>
+                        </div>
+                        <div className="flex items-center gap-4">
+                            <Phone className="h-5 w-5 text-[#b28a58]" />
+                            <span dir="ltr">+420732446656</span>
                         </div>
                         <div className="flex items-center gap-4">
                             <Mail className="h-5 w-5 text-[#b28a58]" />
-                            <span>{t("contact.email")}</span>
+                            <a
+                                href={`mailto:${t("contact.email")}`}
+                                className="transition hover:text-[#b28a58]"
+                                aria-label={`Send email to ${t("contact.email")}`}
+                            >
+                                {t("contact.email")}
+                            </a>
                         </div>
                     </div>
 
